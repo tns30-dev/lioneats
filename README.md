@@ -198,7 +198,7 @@ Our code is designed to recognize 10 Singaporean dishes using a CNN model.
 6. **Access the Application:**
    - The application runs on `http://localhost:8080` by default.
    
-#Credits
+# Credits
 
 1. Built by Soh Yong Sheng, Thet Naung Soe, Chen Yiqiu (Sophie), Zhao Ziyang, Sun Tianrui (Ray) and Lin Zeyu
 2. Submitted as capstone project for NUS-ISS Graduate Diploma in Systems Analysis (SA58)
