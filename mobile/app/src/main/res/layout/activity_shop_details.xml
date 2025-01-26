@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/headerFragmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="75dp" />
+
+        <!-- Shop Name -->
+        <TextView
+            android:id="@+id/shopName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginVertical="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:text="Shop Name" />
+
+        <!-- Address Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Address: "
+                android:textSize="16sp"
+                android:textStyle="bold" /> <!-- Make bold -->
+            <TextView
+                android:id="@+id/shopAddress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16sp"
+                android:text="Shop Address" />
+        </LinearLayout>
+
+        <!-- Phone Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Phone: "
+                android:textSize="16sp"
+                android:textStyle="bold" /> <!-- Make bold -->
+            <TextView
+                android:id="@+id/shopPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16sp"
+                android:text="Shop Phone" />
+        </LinearLayout>
+
+        <!-- Opening Hours Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Opening Hours: "
+                android:textSize="16sp"
+                android:textStyle="bold" /> <!-- Make bold -->
+            <TextView
+                android:id="@+id/openingHoursText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <TableLayout
+            android:id="@+id/openingHoursTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:stretchColumns="1" />
+
+        <!-- Website Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Website: "
+                android:textSize="16sp"
+                android:textStyle="bold" /> <!-- Make bold -->
+            <TextView
+                android:id="@+id/shopUrl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16sp"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:text="Shop Website" />
+        </LinearLayout>
+
+        <!-- Ratings Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Ratings: "
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/shopRating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16sp"
+                android:text="Shop Rating" />
+        </LinearLayout>
+
+        <!-- Price Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="5dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Price: "
+                android:textSize="16sp"
+                android:textStyle="bold" /> <!-- Make bold -->
+            <TextView
+                android:id="@+id/shopPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"
+                android:textSize="16sp"
+                android:text="Shop Price" />
+        </LinearLayout>
+
+        <!-- Dish Images Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/shopDishImage1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="4dp" /> <!-- Add marginEnd for spacing -->
+            <ImageView
+                android:id="@+id/shopDishImage2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp" /> <!-- Add marginStart and marginEnd for spacing -->
+            <ImageView
+                android:id="@+id/shopDishImage3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="4dp" /> <!-- Add marginStart for spacing -->
+        </LinearLayout>
+
+        <!-- Latest Review Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latest Review:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="5dp" />
+        <TextView
+            android:id="@+id/shopReview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginBottom="10dp"
+            android:text="Shop Review" />
+
+    </LinearLayout>
+</ScrollView>
+

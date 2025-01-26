@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LionEats</string>
+    <string-array name="spinnerBudget_items">
+        <item>LOW</item>
+        <item>MEDIUM</item>
+        <item>HIGH</item>
+    </string-array>
+    <string-array name="spinnerRating_items">
+        <item>3.5 </item>
+        <item>4.0 </item>
+        <item>4.5 </item>
+    </string-array>
+</resources>

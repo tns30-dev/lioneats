@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">8b1c60a4-e961-4c6f-95a0-c821537ca602.mock.pstmn.io</domain>
+        <domain includeSubdomains="true">10.0.2.2</domain>
+        <domain includeSubdomains="true">10.249.4.214</domain>
+    </domain-config>
+</network-security-config>

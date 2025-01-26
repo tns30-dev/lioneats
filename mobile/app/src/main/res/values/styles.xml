@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Define a custom button style -->
+    <style name="MyButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:backgroundTint">@color/appOrange</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+</resources>
